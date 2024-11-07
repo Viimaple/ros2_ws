@@ -1,9 +1,9 @@
-name:test
-on:push
+name: test
+on: push
 jobs:
   test:
-    runs-on:ubuntu-latest
+    runs-on: ubuntu-latest
   steps:
-  - uses:actions/checkout@v3
+  - uses: actions/checkout@v3
   - nae: All test
-    run:bash -xv ./test.bash
+    run: bash -xv ./test.bash
