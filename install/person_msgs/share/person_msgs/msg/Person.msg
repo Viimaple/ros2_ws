@@ -1,3 +1,1 @@
-string name
-uint8 age
-
+/home/mori/ros2_ws/src/person_msgs/msg/Person.msg

@@ -1,0 +1,248 @@
+[0.000000] (-) TimerEvent: {}
+[0.000130] (mypkg) JobQueued: {'identifier': 'mypkg', 'dependencies': OrderedDict()}
+[0.000162] (person_msgs) JobQueued: {'identifier': 'person_msgs', 'dependencies': OrderedDict()}
+[0.000186] (mypkg) JobStarted: {'identifier': 'mypkg'}
+[0.007635] (person_msgs) JobStarted: {'identifier': 'person_msgs'}
+[0.099293] (-) TimerEvent: {}
+[0.144092] (person_msgs) JobProgress: {'identifier': 'person_msgs', 'progress': 'cmake'}
+[0.144713] (person_msgs) JobProgress: {'identifier': 'person_msgs', 'progress': 'build'}
+[0.145440] (person_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/mori/ros2_ws/build/person_msgs', '--', '-j20', '-l20'], 'cwd': '/home/mori/ros2_ws/build/person_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'mori'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/mori/ros2_ws/install/person_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/mori'), ('OLDPWD', '/home/mori/ros2_ws/src/mypkg/test'), ('ROS_PYTHON_VERSION', '3'), ('WSL_DISTRO_NAME', 'Ubuntu-20.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/mori/ros2_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'mori'), ('NAME', 'Maple'), ('WSL_INTEROP', '/run/WSL/2641_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/WindowsApps/MicrosoftCorporationII.WindowsSubsystemForLinux_2.3.26.0_x64__8wekyb3d8bbwe:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/java8path:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/Bandizip/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files (x86)/ZeroTier/One/:/mnt/c/Program Files/MATLAB/R2024a/bin:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA app/NvDLISR:/mnt/c/Users/28401/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/28401/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin'), ('XDG_RUNTIME_DIR', '/mnt/wslg/runtime-dir'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/mori/ros2_ws/install/person_msgs:/home/mori/ros2_ws/install/mypkg:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('ROS_AUTOMATIC_DISCOVERY_RANGE', 'LOCALHOST'), ('PWD', '/home/mori/ros2_ws/build/person_msgs'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/mori/ros2_ws/install/person_msgs/lib/python3.8/site-packages:/home/mori/ros2_ws/install/mypkg/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/mori/ros2_ws/install/person_msgs:/home/mori/ros2_ws/install/mypkg:/opt/ros/foxy'), ('WSLENV', '')]), 'shell': False}
+[0.165309] (person_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[0.181233] (person_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[0.181463] (person_msgs) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[0.199475] (-) TimerEvent: {}
+[0.292286] (person_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.0.1 (/opt/ros/foxy/share/rosidl_default_generators/cmake)\n'}
+[0.293384] (person_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.295204] (person_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[0.299684] (-) TimerEvent: {}
+[0.388954] (mypkg) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/mypkg', 'build', '--build-base', '/home/mori/ros2_ws/build/mypkg/build', 'install', '--record', '/home/mori/ros2_ws/build/mypkg/install.log', '--install-scripts', '$base/lib/mypkg', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/mori/ros2_ws/src/mypkg', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'mori', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/mori/ros2_ws/install/person_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib', 'HOME': '/home/mori', 'OLDPWD': '/home/mori/ros2_ws/src/mypkg/test', 'ROS_PYTHON_VERSION': '3', 'WSL_DISTRO_NAME': 'Ubuntu-20.04', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/mori/ros2_ws/install', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'mori', 'NAME': 'Maple', 'WSL_INTEROP': '/run/WSL/2641_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/WindowsApps/MicrosoftCorporationII.WindowsSubsystemForLinux_2.3.26.0_x64__8wekyb3d8bbwe:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/java8path:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/Bandizip/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files (x86)/ZeroTier/One/:/mnt/c/Program Files/MATLAB/R2024a/bin:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA app/NvDLISR:/mnt/c/Users/28401/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/28401/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin', 'XDG_RUNTIME_DIR': '/mnt/wslg/runtime-dir', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/home/mori/ros2_ws/install/person_msgs:/home/mori/ros2_ws/install/mypkg:/opt/ros/foxy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'LOCALHOST', 'PWD': '/home/mori/ros2_ws/build/mypkg', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/mori/ros2_ws/build/mypkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mori/ros2_ws/install/mypkg/lib/python3.8/site-packages:/home/mori/ros2_ws/install/person_msgs/lib/python3.8/site-packages:/home/mori/ros2_ws/install/mypkg/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'CMAKE_PREFIX_PATH': '/home/mori/ros2_ws/install/person_msgs', 'WSLENV': ''}, 'shell': False}
+[0.399859] (-) TimerEvent: {}
+[0.500307] (-) TimerEvent: {}
+[0.509983] (mypkg) StdoutLine: {'line': b'running egg_info\n'}
+[0.510514] (mypkg) StdoutLine: {'line': b'writing ../../build/mypkg/mypkg.egg-info/PKG-INFO\n'}
+[0.510846] (mypkg) StdoutLine: {'line': b'writing dependency_links to ../../build/mypkg/mypkg.egg-info/dependency_links.txt\n'}
+[0.510947] (mypkg) StdoutLine: {'line': b'writing entry points to ../../build/mypkg/mypkg.egg-info/entry_points.txt\n'}
+[0.510980] (mypkg) StdoutLine: {'line': b'writing requirements to ../../build/mypkg/mypkg.egg-info/requires.txt\n'}
+[0.511007] (mypkg) StdoutLine: {'line': b'writing top-level names to ../../build/mypkg/mypkg.egg-info/top_level.txt\n'}
+[0.533325] (mypkg) StdoutLine: {'line': b"reading manifest file '../../build/mypkg/mypkg.egg-info/SOURCES.txt'\n"}
+[0.533945] (mypkg) StdoutLine: {'line': b"writing manifest file '../../build/mypkg/mypkg.egg-info/SOURCES.txt'\n"}
+[0.534191] (mypkg) StdoutLine: {'line': b'running build\n'}
+[0.534276] (mypkg) StdoutLine: {'line': b'running build_py\n'}
+[0.534409] (mypkg) StdoutLine: {'line': b'running install\n'}
+[0.535147] (mypkg) StdoutLine: {'line': b'running install_lib\n'}
+[0.535994] (mypkg) StdoutLine: {'line': b'running install_data\n'}
+[0.536139] (mypkg) StdoutLine: {'line': b'running install_egg_info\n'}
+[0.537377] (mypkg) StdoutLine: {'line': b"removing '/home/mori/ros2_ws/install/mypkg/lib/python3.8/site-packages/mypkg-0.0.0-py3.8.egg-info' (and everything under it)\n"}
+[0.537641] (mypkg) StdoutLine: {'line': b'Copying ../../build/mypkg/mypkg.egg-info to /home/mori/ros2_ws/install/mypkg/lib/python3.8/site-packages/mypkg-0.0.0-py3.8.egg-info\n'}
+[0.538339] (mypkg) StdoutLine: {'line': b'running install_scripts\n'}
+[0.549207] (mypkg) StdoutLine: {'line': b'Installing listener script to /home/mori/ros2_ws/install/mypkg/lib/mypkg\n'}
+[0.549410] (mypkg) StdoutLine: {'line': b'Installing talker script to /home/mori/ros2_ws/install/mypkg/lib/mypkg\n'}
+[0.549549] (mypkg) StdoutLine: {'line': b"writing list of installed files to '/home/mori/ros2_ws/build/mypkg/install.log'\n"}
+[0.563993] (mypkg) CommandEnded: {'returncode': 0}
+[0.570324] (mypkg) JobEnded: {'identifier': 'mypkg', 'rc': 0}
+[0.600485] (-) TimerEvent: {}
+[0.700960] (-) TimerEvent: {}
+[0.801528] (-) TimerEvent: {}
+[0.901936] (-) TimerEvent: {}
+[1.002307] (-) TimerEvent: {}
+[1.102728] (-) TimerEvent: {}
+[1.203122] (-) TimerEvent: {}
+[1.303988] (-) TimerEvent: {}
+[1.404386] (-) TimerEvent: {}
+[1.504783] (-) TimerEvent: {}
+[1.605127] (-) TimerEvent: {}
+[1.705500] (-) TimerEvent: {}
+[1.806177] (-) TimerEvent: {}
+[1.906838] (-) TimerEvent: {}
+[2.007625] (-) TimerEvent: {}
+[2.108137] (-) TimerEvent: {}
+[2.208844] (-) TimerEvent: {}
+[2.309169] (-) TimerEvent: {}
+[2.409619] (-) TimerEvent: {}
+[2.510138] (-) TimerEvent: {}
+[2.610797] (-) TimerEvent: {}
+[2.711180] (-) TimerEvent: {}
+[2.811664] (-) TimerEvent: {}
+[2.912014] (-) TimerEvent: {}
+[3.012496] (-) TimerEvent: {}
+[3.113015] (-) TimerEvent: {}
+[3.213476] (-) TimerEvent: {}
+[3.313880] (-) TimerEvent: {}
+[3.414230] (-) TimerEvent: {}
+[3.514561] (-) TimerEvent: {}
+[3.614935] (-) TimerEvent: {}
+[3.715325] (-) TimerEvent: {}
+[3.815737] (-) TimerEvent: {}
+[3.916137] (-) TimerEvent: {}
+[4.016511] (-) TimerEvent: {}
+[4.116861] (-) TimerEvent: {}
+[4.217310] (-) TimerEvent: {}
+[4.317703] (-) TimerEvent: {}
+[4.418111] (-) TimerEvent: {}
+[4.518577] (-) TimerEvent: {}
+[4.618895] (-) TimerEvent: {}
+[4.719281] (-) TimerEvent: {}
+[4.819849] (-) TimerEvent: {}
+[4.920425] (-) TimerEvent: {}
+[5.020898] (-) TimerEvent: {}
+[5.121322] (-) TimerEvent: {}
+[5.221633] (-) TimerEvent: {}
+[5.322041] (-) TimerEvent: {}
+[5.422449] (-) TimerEvent: {}
+[5.485384] (person_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[5.511676] (person_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") \n'}
+[5.522782] (-) TimerEvent: {}
+[5.586800] (person_msgs) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.9.2 (/opt/ros/foxy/share/ament_cmake_ros/cmake)\n'}
+[5.622909] (-) TimerEvent: {}
+[5.723290] (-) TimerEvent: {}
+[5.823705] (-) TimerEvent: {}
+[5.924133] (-) TimerEvent: {}
+[6.024451] (-) TimerEvent: {}
+[6.124762] (-) TimerEvent: {}
+[6.225114] (-) TimerEvent: {}
+[6.325460] (-) TimerEvent: {}
+[6.425793] (-) TimerEvent: {}
+[6.526141] (-) TimerEvent: {}
+[6.626673] (-) TimerEvent: {}
+[6.727364] (-) TimerEvent: {}
+[6.827729] (-) TimerEvent: {}
+[6.928042] (-) TimerEvent: {}
+[7.028377] (-) TimerEvent: {}
+[7.128743] (-) TimerEvent: {}
+[7.229261] (-) TimerEvent: {}
+[7.329593] (-) TimerEvent: {}
+[7.429881] (-) TimerEvent: {}
+[7.530309] (-) TimerEvent: {}
+[7.630893] (-) TimerEvent: {}
+[7.731548] (-) TimerEvent: {}
+[7.832429] (-) TimerEvent: {}
+[7.933098] (-) TimerEvent: {}
+[8.033417] (-) TimerEvent: {}
+[8.133903] (-) TimerEvent: {}
+[8.234329] (-) TimerEvent: {}
+[8.334683] (-) TimerEvent: {}
+[8.435041] (-) TimerEvent: {}
+[8.535354] (-) TimerEvent: {}
+[8.635718] (-) TimerEvent: {}
+[8.736038] (-) TimerEvent: {}
+[8.836347] (-) TimerEvent: {}
+[8.936951] (-) TimerEvent: {}
+[9.037518] (-) TimerEvent: {}
+[9.137846] (-) TimerEvent: {}
+[9.238209] (-) TimerEvent: {}
+[9.338585] (-) TimerEvent: {}
+[9.438935] (-) TimerEvent: {}
+[9.539377] (-) TimerEvent: {}
+[9.639803] (-) TimerEvent: {}
+[9.740103] (-) TimerEvent: {}
+[9.840447] (-) TimerEvent: {}
+[9.940859] (-) TimerEvent: {}
+[10.041165] (-) TimerEvent: {}
+[10.141488] (-) TimerEvent: {}
+[10.190976] (person_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[10.194443] (person_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[10.208753] (person_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3.5") \n'}
+[10.209101] (person_msgs) StdoutLine: {'line': b'-- Found python_cmake_module: 0.8.1 (/opt/ros/foxy/share/python_cmake_module/cmake)\n'}
+[10.224799] (person_msgs) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[10.225179] (person_msgs) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.8\n'}
+[10.225233] (person_msgs) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.8.so\n'}
+[10.232056] (person_msgs) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)\n'}
+[10.237713] (person_msgs) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[10.238556] (person_msgs) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[10.238782] (person_msgs) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[10.240476] (person_msgs) StdoutLine: {'line': b'-- Configuring done\n'}
+[10.241565] (-) TimerEvent: {}
+[10.255579] (person_msgs) StdoutLine: {'line': b'-- Generating done\n'}
+[10.258115] (person_msgs) StdoutLine: {'line': b'-- Build files have been written to: /home/mori/ros2_ws/build/person_msgs\n'}
+[10.283550] (person_msgs) StdoutLine: {'line': b'[ 12%] Built target person_msgs__rosidl_generator_c\n'}
+[10.283736] (person_msgs) StdoutLine: {'line': b'[ 12%] Built target person_msgs__cpp\n'}
+[10.298035] (person_msgs) StdoutLine: {'line': b'[ 41%] Built target person_msgs__rosidl_typesupport_introspection_cpp\n'}
+[10.298196] (person_msgs) StdoutLine: {'line': b'[ 41%] Built target person_msgs__rosidl_typesupport_c\n'}
+[10.298236] (person_msgs) StdoutLine: {'line': b'[ 41%] Built target person_msgs__rosidl_typesupport_introspection_c\n'}
+[10.312123] (person_msgs) StdoutLine: {'line': b'[ 51%] Built target person_msgs__rosidl_typesupport_cpp\n'}
+[10.312819] (person_msgs) StdoutLine: {'line': b'[ 61%] Built target person_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[10.328240] (person_msgs) StdoutLine: {'line': b'[ 70%] Built target person_msgs__rosidl_typesupport_fastrtps_c\n'}
+[10.341712] (-) TimerEvent: {}
+[10.342289] (person_msgs) StdoutLine: {'line': b'[ 70%] Built target person_msgs\n'}
+[10.355304] (person_msgs) StdoutLine: {'line': b'[ 74%] Built target person_msgs__py\n'}
+[10.370388] (person_msgs) StdoutLine: {'line': b'[ 80%] Built target person_msgs__python\n'}
+[10.388007] (person_msgs) StdoutLine: {'line': b'[ 93%] Built target person_msgs__rosidl_typesupport_c__pyext\n'}
+[10.388173] (person_msgs) StdoutLine: {'line': b'[ 93%] Built target person_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[10.388340] (person_msgs) StdoutLine: {'line': b'[100%] Built target person_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[10.395967] (person_msgs) CommandEnded: {'returncode': 0}
+[10.427288] (person_msgs) JobProgress: {'identifier': 'person_msgs', 'progress': 'install'}
+[10.433691] (person_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/mori/ros2_ws/build/person_msgs'], 'cwd': '/home/mori/ros2_ws/build/person_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'mori'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/mori/ros2_ws/install/person_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/mori'), ('OLDPWD', '/home/mori/ros2_ws/src/mypkg/test'), ('ROS_PYTHON_VERSION', '3'), ('WSL_DISTRO_NAME', 'Ubuntu-20.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/mori/ros2_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'mori'), ('NAME', 'Maple'), ('WSL_INTEROP', '/run/WSL/2641_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/WindowsApps/MicrosoftCorporationII.WindowsSubsystemForLinux_2.3.26.0_x64__8wekyb3d8bbwe:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/java8path:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/Bandizip/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files (x86)/ZeroTier/One/:/mnt/c/Program Files/MATLAB/R2024a/bin:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA app/NvDLISR:/mnt/c/Users/28401/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/28401/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin'), ('XDG_RUNTIME_DIR', '/mnt/wslg/runtime-dir'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/mori/ros2_ws/install/person_msgs:/home/mori/ros2_ws/install/mypkg:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('ROS_AUTOMATIC_DISCOVERY_RANGE', 'LOCALHOST'), ('PWD', '/home/mori/ros2_ws/build/person_msgs'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/mori/ros2_ws/install/person_msgs/lib/python3.8/site-packages:/home/mori/ros2_ws/install/mypkg/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/mori/ros2_ws/install/person_msgs:/home/mori/ros2_ws/install/mypkg:/opt/ros/foxy'), ('WSLENV', '')]), 'shell': False}
+[10.439279] (person_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[10.440156] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mori/ros2_ws/install/person_msgs/share/ament_index/resource_index/rosidl_interfaces/person_msgs\n'}
+[10.440253] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mori/ros2_ws/install/person_msgs/include/person_msgs\n'}
+[10.440337] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mori/ros2_ws/install/person_msgs/include/person_msgs/msg\n'}
+[10.440423] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mori/ros2_ws/install/person_msgs/include/person_msgs/msg/person.h\n'}
+[10.440506] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mori/ros2_ws/install/person_msgs/include/person_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[10.440587] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mori/ros2_ws/install/person_msgs/include/person_msgs/msg/detail\n'}
+[10.440755] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mori/ros2_ws/install/person_msgs/include/person_msgs/msg/detail/person__functions.h\n'}
+[10.440864] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mori/ros2_ws/install/person_msgs/include/person_msgs/msg/detail/person__functions.c\n'}
+[10.440952] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mori/ros2_ws/install/person_msgs/include/person_msgs/msg/detail/person__type_support.h\n'}
+[10.441035] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mori/ros2_ws/install/person_msgs/include/person_msgs/msg/detail/person__struct.h\n'}
+[10.441067] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mori/ros2_ws/install/person_msgs/share/person_msgs/environment/library_path.sh\n'}
+[10.441150] (person_msgs) StdoutLine: {'line': b'-- Installing: /home/mori/ros2_ws/install/person_msgs/share/person_msgs/environment/library_path.dsv\n'}
+[10.441232] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mori/ros2_ws/install/person_msgs/lib/libperson_msgs__rosidl_generator_c.so\n'}
+[10.441315] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mori/ros2_ws/install/person_msgs/include/person_msgs\n'}
+[10.441397] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mori/ros2_ws/install/person_msgs/include/person_msgs/msg\n'}
+[10.441478] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mori/ros2_ws/install/person_msgs/include/person_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[10.441560] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mori/ros2_ws/install/person_msgs/include/person_msgs/msg/detail\n'}
+[10.441645] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mori/ros2_ws/install/person_msgs/include/person_msgs/msg/detail/person__rosidl_typesupport_fastrtps_c.h\n'}
+[10.441724] (-) TimerEvent: {}
+[10.441900] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mori/ros2_ws/install/person_msgs/lib/libperson_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[10.442044] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mori/ros2_ws/install/person_msgs/include/person_msgs\n'}
+[10.442088] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mori/ros2_ws/install/person_msgs/include/person_msgs/msg\n'}
+[10.442117] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mori/ros2_ws/install/person_msgs/include/person_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[10.442144] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mori/ros2_ws/install/person_msgs/include/person_msgs/msg/detail\n'}
+[10.442170] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mori/ros2_ws/install/person_msgs/include/person_msgs/msg/detail/dds_fastrtps\n'}
+[10.442195] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mori/ros2_ws/install/person_msgs/include/person_msgs/msg/detail/person__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[10.442219] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mori/ros2_ws/install/person_msgs/lib/libperson_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[10.442249] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mori/ros2_ws/install/person_msgs/include/person_msgs\n'}
+[10.442274] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mori/ros2_ws/install/person_msgs/include/person_msgs/msg\n'}
+[10.442298] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mori/ros2_ws/install/person_msgs/include/person_msgs/msg/detail\n'}
+[10.442326] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mori/ros2_ws/install/person_msgs/include/person_msgs/msg/detail/person__type_support.c\n'}
+[10.442351] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mori/ros2_ws/install/person_msgs/include/person_msgs/msg/detail/person__rosidl_typesupport_introspection_c.h\n'}
+[10.442373] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mori/ros2_ws/install/person_msgs/include/person_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[10.442395] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mori/ros2_ws/install/person_msgs/lib/libperson_msgs__rosidl_typesupport_introspection_c.so\n'}
+[10.442418] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mori/ros2_ws/install/person_msgs/lib/libperson_msgs__rosidl_typesupport_c.so\n'}
+[10.442441] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mori/ros2_ws/install/person_msgs/include/person_msgs\n'}
+[10.442470] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mori/ros2_ws/install/person_msgs/include/person_msgs/msg\n'}
+[10.442494] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mori/ros2_ws/install/person_msgs/include/person_msgs/msg/person.hpp\n'}
+[10.442517] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mori/ros2_ws/install/person_msgs/include/person_msgs/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[10.442540] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mori/ros2_ws/install/person_msgs/include/person_msgs/msg/detail\n'}
+[10.442564] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mori/ros2_ws/install/person_msgs/include/person_msgs/msg/detail/person__struct.hpp\n'}
+[10.442588] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mori/ros2_ws/install/person_msgs/include/person_msgs/msg/detail/person__type_support.hpp\n'}
+[10.442611] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mori/ros2_ws/install/person_msgs/include/person_msgs/msg/detail/person__traits.hpp\n'}
+[10.442635] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mori/ros2_ws/install/person_msgs/include/person_msgs/msg/detail/person__builder.hpp\n'}
+[10.442661] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mori/ros2_ws/install/person_msgs/include/person_msgs\n'}
+[10.442685] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mori/ros2_ws/install/person_msgs/include/person_msgs/msg\n'}
+[10.442708] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mori/ros2_ws/install/person_msgs/include/person_msgs/msg/detail\n'}
+[10.442733] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mori/ros2_ws/install/person_msgs/include/person_msgs/msg/detail/person__rosidl_typesupport_introspection_cpp.hpp\n'}
+[10.442760] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mori/ros2_ws/install/person_msgs/include/person_msgs/msg/detail/person__type_support.cpp\n'}
+[10.442784] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mori/ros2_ws/install/person_msgs/lib/libperson_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[10.442810] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mori/ros2_ws/install/person_msgs/lib/libperson_msgs__rosidl_typesupport_cpp.so\n'}
+[10.442837] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mori/ros2_ws/install/person_msgs/share/person_msgs/environment/pythonpath.sh\n'}
+[10.442863] (person_msgs) StdoutLine: {'line': b'-- Installing: /home/mori/ros2_ws/install/person_msgs/share/person_msgs/environment/pythonpath.dsv\n'}
+[10.442890] (person_msgs) StdoutLine: {'line': b'-- Installing: /home/mori/ros2_ws/install/person_msgs/lib/python3.8/site-packages/person_msgs/__init__.py\n'}
+[10.461065] (person_msgs) StdoutLine: {'line': b"Compiling '/home/mori/ros2_ws/install/person_msgs/lib/python3.8/site-packages/person_msgs/__init__.py'...\n"}
+[10.463460] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mori/ros2_ws/install/person_msgs/lib/python3.8/site-packages/person_msgs/msg\n'}
+[10.463805] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mori/ros2_ws/install/person_msgs/lib/python3.8/site-packages/person_msgs/msg/_person_s.c\n'}
+[10.463848] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mori/ros2_ws/install/person_msgs/lib/python3.8/site-packages/person_msgs/msg/_person.py\n'}
+[10.463888] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mori/ros2_ws/install/person_msgs/lib/python3.8/site-packages/person_msgs/msg/__init__.py\n'}
+[10.463915] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mori/ros2_ws/install/person_msgs/lib/python3.8/site-packages/person_msgs/person_msgs_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so\n'}
+[10.464047] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mori/ros2_ws/install/person_msgs/lib/python3.8/site-packages/person_msgs/person_msgs_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so\n'}
+[10.464426] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mori/ros2_ws/install/person_msgs/lib/python3.8/site-packages/person_msgs/person_msgs_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so\n'}
+[10.464682] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mori/ros2_ws/install/person_msgs/lib/libperson_msgs__python.so\n'}
+[10.464996] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mori/ros2_ws/install/person_msgs/share/person_msgs/msg/Person.idl\n'}
+[10.465127] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mori/ros2_ws/install/person_msgs/share/person_msgs/msg/Person.msg\n'}
+[10.465163] (person_msgs) StderrLine: {'line': b'CMake Error at cmake_install.cmake:362 (file):\n'}
+[10.465206] (person_msgs) StderrLine: {'line': b'  file INSTALL cannot find "/home/mori/ros2_ws/src/person_msgs/launch": No\n'}
+[10.465234] (person_msgs) StderrLine: {'line': b'  such file or directory.\n'}
+[10.465258] (person_msgs) StderrLine: {'line': b'\n'}
+[10.465282] (person_msgs) StderrLine: {'line': b'\n'}
+[10.466335] (person_msgs) CommandEnded: {'returncode': 1}
+[10.502260] (person_msgs) JobEnded: {'identifier': 'person_msgs', 'rc': 1}
+[10.512964] (-) EventReactorShutdown: {}

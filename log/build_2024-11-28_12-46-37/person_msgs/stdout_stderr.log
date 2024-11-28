@@ -1,0 +1,83 @@
+[  3%] Built target person_msgs__cpp
+[ 12%] Built target person_msgs__rosidl_generator_c
+[ 32%] Built target person_msgs__rosidl_typesupport_cpp
+[ 29%] Built target person_msgs__rosidl_typesupport_c
+[ 41%] Built target person_msgs__rosidl_typesupport_introspection_c
+[ 51%] Built target person_msgs__rosidl_typesupport_fastrtps_cpp
+[ 61%] Built target person_msgs__rosidl_typesupport_introspection_cpp
+[ 70%] Built target person_msgs__rosidl_typesupport_fastrtps_c
+[ 70%] Built target person_msgs
+[ 74%] Built target person_msgs__py
+[ 80%] Built target person_msgs__python
+[ 96%] Built target person_msgs__rosidl_typesupport_introspection_c__pyext
+[ 96%] Built target person_msgs__rosidl_typesupport_fastrtps_c__pyext
+[100%] Built target person_msgs__rosidl_typesupport_c__pyext
+-- Install configuration: ""
+-- Up-to-date: /home/mori/ros2_ws/install/person_msgs/share/ament_index/resource_index/rosidl_interfaces/person_msgs
+-- Up-to-date: /home/mori/ros2_ws/install/person_msgs/include/person_msgs
+-- Up-to-date: /home/mori/ros2_ws/install/person_msgs/include/person_msgs/msg
+-- Up-to-date: /home/mori/ros2_ws/install/person_msgs/include/person_msgs/msg/person.h
+-- Up-to-date: /home/mori/ros2_ws/install/person_msgs/include/person_msgs/msg/rosidl_generator_c__visibility_control.h
+-- Up-to-date: /home/mori/ros2_ws/install/person_msgs/include/person_msgs/msg/detail
+-- Up-to-date: /home/mori/ros2_ws/install/person_msgs/include/person_msgs/msg/detail/person__functions.h
+-- Up-to-date: /home/mori/ros2_ws/install/person_msgs/include/person_msgs/msg/detail/person__functions.c
+-- Up-to-date: /home/mori/ros2_ws/install/person_msgs/include/person_msgs/msg/detail/person__type_support.h
+-- Up-to-date: /home/mori/ros2_ws/install/person_msgs/include/person_msgs/msg/detail/person__struct.h
+-- Up-to-date: /home/mori/ros2_ws/install/person_msgs/share/person_msgs/environment/library_path.sh
+-- Up-to-date: /home/mori/ros2_ws/install/person_msgs/share/person_msgs/environment/library_path.dsv
+-- Up-to-date: /home/mori/ros2_ws/install/person_msgs/lib/libperson_msgs__rosidl_generator_c.so
+-- Up-to-date: /home/mori/ros2_ws/install/person_msgs/include/person_msgs
+-- Up-to-date: /home/mori/ros2_ws/install/person_msgs/include/person_msgs/msg
+-- Up-to-date: /home/mori/ros2_ws/install/person_msgs/include/person_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+-- Up-to-date: /home/mori/ros2_ws/install/person_msgs/include/person_msgs/msg/detail
+-- Up-to-date: /home/mori/ros2_ws/install/person_msgs/include/person_msgs/msg/detail/person__rosidl_typesupport_fastrtps_c.h
+-- Up-to-date: /home/mori/ros2_ws/install/person_msgs/lib/libperson_msgs__rosidl_typesupport_fastrtps_c.so
+-- Up-to-date: /home/mori/ros2_ws/install/person_msgs/include/person_msgs
+-- Up-to-date: /home/mori/ros2_ws/install/person_msgs/include/person_msgs/msg
+-- Up-to-date: /home/mori/ros2_ws/install/person_msgs/include/person_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+-- Up-to-date: /home/mori/ros2_ws/install/person_msgs/include/person_msgs/msg/detail
+-- Up-to-date: /home/mori/ros2_ws/install/person_msgs/include/person_msgs/msg/detail/dds_fastrtps
+-- Up-to-date: /home/mori/ros2_ws/install/person_msgs/include/person_msgs/msg/detail/person__rosidl_typesupport_fastrtps_cpp.hpp
+-- Up-to-date: /home/mori/ros2_ws/install/person_msgs/lib/libperson_msgs__rosidl_typesupport_fastrtps_cpp.so
+-- Up-to-date: /home/mori/ros2_ws/install/person_msgs/include/person_msgs
+-- Up-to-date: /home/mori/ros2_ws/install/person_msgs/include/person_msgs/msg
+-- Up-to-date: /home/mori/ros2_ws/install/person_msgs/include/person_msgs/msg/detail
+-- Up-to-date: /home/mori/ros2_ws/install/person_msgs/include/person_msgs/msg/detail/person__type_support.c
+-- Up-to-date: /home/mori/ros2_ws/install/person_msgs/include/person_msgs/msg/detail/person__rosidl_typesupport_introspection_c.h
+-- Up-to-date: /home/mori/ros2_ws/install/person_msgs/include/person_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+-- Up-to-date: /home/mori/ros2_ws/install/person_msgs/lib/libperson_msgs__rosidl_typesupport_introspection_c.so
+-- Up-to-date: /home/mori/ros2_ws/install/person_msgs/lib/libperson_msgs__rosidl_typesupport_c.so
+-- Up-to-date: /home/mori/ros2_ws/install/person_msgs/include/person_msgs
+-- Up-to-date: /home/mori/ros2_ws/install/person_msgs/include/person_msgs/msg
+-- Up-to-date: /home/mori/ros2_ws/install/person_msgs/include/person_msgs/msg/person.hpp
+-- Up-to-date: /home/mori/ros2_ws/install/person_msgs/include/person_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+-- Up-to-date: /home/mori/ros2_ws/install/person_msgs/include/person_msgs/msg/detail
+-- Up-to-date: /home/mori/ros2_ws/install/person_msgs/include/person_msgs/msg/detail/person__struct.hpp
+-- Up-to-date: /home/mori/ros2_ws/install/person_msgs/include/person_msgs/msg/detail/person__type_support.hpp
+-- Up-to-date: /home/mori/ros2_ws/install/person_msgs/include/person_msgs/msg/detail/person__traits.hpp
+-- Up-to-date: /home/mori/ros2_ws/install/person_msgs/include/person_msgs/msg/detail/person__builder.hpp
+-- Up-to-date: /home/mori/ros2_ws/install/person_msgs/include/person_msgs
+-- Up-to-date: /home/mori/ros2_ws/install/person_msgs/include/person_msgs/msg
+-- Up-to-date: /home/mori/ros2_ws/install/person_msgs/include/person_msgs/msg/detail
+-- Up-to-date: /home/mori/ros2_ws/install/person_msgs/include/person_msgs/msg/detail/person__rosidl_typesupport_introspection_cpp.hpp
+-- Up-to-date: /home/mori/ros2_ws/install/person_msgs/include/person_msgs/msg/detail/person__type_support.cpp
+-- Up-to-date: /home/mori/ros2_ws/install/person_msgs/lib/libperson_msgs__rosidl_typesupport_introspection_cpp.so
+-- Up-to-date: /home/mori/ros2_ws/install/person_msgs/lib/libperson_msgs__rosidl_typesupport_cpp.so
+-- Up-to-date: /home/mori/ros2_ws/install/person_msgs/share/person_msgs/environment/pythonpath.sh
+-- Up-to-date: /home/mori/ros2_ws/install/person_msgs/share/person_msgs/environment/pythonpath.dsv
+-- Up-to-date: /home/mori/ros2_ws/install/person_msgs/lib/python3.8/site-packages/person_msgs/__init__.py
+-- Up-to-date: /home/mori/ros2_ws/install/person_msgs/lib/python3.8/site-packages/person_msgs/msg
+-- Up-to-date: /home/mori/ros2_ws/install/person_msgs/lib/python3.8/site-packages/person_msgs/msg/_person_s.c
+-- Up-to-date: /home/mori/ros2_ws/install/person_msgs/lib/python3.8/site-packages/person_msgs/msg/_person.py
+-- Up-to-date: /home/mori/ros2_ws/install/person_msgs/lib/python3.8/site-packages/person_msgs/msg/__init__.py
+-- Up-to-date: /home/mori/ros2_ws/install/person_msgs/lib/python3.8/site-packages/person_msgs/person_msgs_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so
+-- Up-to-date: /home/mori/ros2_ws/install/person_msgs/lib/python3.8/site-packages/person_msgs/person_msgs_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so
+-- Up-to-date: /home/mori/ros2_ws/install/person_msgs/lib/python3.8/site-packages/person_msgs/person_msgs_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so
+-- Up-to-date: /home/mori/ros2_ws/install/person_msgs/lib/libperson_msgs__python.so
+-- Up-to-date: /home/mori/ros2_ws/install/person_msgs/share/person_msgs/msg/Person.idl
+CMake Error at cmake_install.cmake:362 (file):
+  file INSTALL cannot find "/home/mori/ros2_ws/src/person_msgs/launch": No
+  such file or directory.
+
+
+-- Up-to-date: /home/mori/ros2_ws/install/person_msgs/share/person_msgs/msg/Person.msg
