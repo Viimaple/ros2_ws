@@ -1,14 +1,22 @@
 import rclpy
 from rclpy.node import Node
-from person_msgs.msg import Person
+from std_msgs.msg import Int16
 
-rclpy.init()
-node = Node("listener")
+class Listener(Node):
+    def __init__(self):
+        super().__init__('listener')
 
-def cb(msg):
-    node.get_logger().info("Listen: %s" % msg)
+        self.subscription = self.create_subscription(
+            Int16,              
+            'countup',          
+            self.listener_callback,  
+            10                   
+        )
+        self.subscription
+    def listener_callback(self, msg):
+        self.get_logger().info('I heard: "%d"' % msg.data)
 
 def main():
-    pub = node.create_subscription(Person, "person", cb, 10)
+    rclpy.init()
+    node = Listener()
     rclpy.spin(node)
-
