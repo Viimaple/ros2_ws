@@ -20,16 +20,32 @@ namespace msg
 namespace builder
 {
 
+class Init_Person_timezone_info
+{
+public:
+  explicit Init_Person_timezone_info(::person_msgs::msg::Person & msg)
+  : msg_(msg)
+  {}
+  ::person_msgs::msg::Person timezone_info(::person_msgs::msg::Person::_timezone_info_type arg)
+  {
+    msg_.timezone_info = std::move(arg);
+    return std::move(msg_);
+  }
+
+private:
+  ::person_msgs::msg::Person msg_;
+};
+
 class Init_Person_age
 {
 public:
   explicit Init_Person_age(::person_msgs::msg::Person & msg)
   : msg_(msg)
   {}
-  ::person_msgs::msg::Person age(::person_msgs::msg::Person::_age_type arg)
+  Init_Person_timezone_info age(::person_msgs::msg::Person::_age_type arg)
   {
     msg_.age = std::move(arg);
-    return std::move(msg_);
+    return Init_Person_timezone_info(msg_);
   }
 
 private:

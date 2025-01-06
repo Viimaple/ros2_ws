@@ -19,6 +19,7 @@ extern "C"
 
 // Include directives for member types
 // Member 'name'
+// Member 'timezone_info'
 #include "rosidl_runtime_c/string.h"
 
 // Struct defined in msg/Person in the package person_msgs.
@@ -26,6 +27,7 @@ typedef struct person_msgs__msg__Person
 {
   rosidl_runtime_c__String name;
   uint8_t age;
+  rosidl_runtime_c__String timezone_info;
 } person_msgs__msg__Person;
 
 // Struct for a sequence of person_msgs__msg__Person.

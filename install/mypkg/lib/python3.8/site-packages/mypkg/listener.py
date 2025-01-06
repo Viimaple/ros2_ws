@@ -6,9 +6,9 @@ rclpy.init()
 node = Node("listener")
 
 def cb(msg):
-    node.get_logger().info("Listen: %s" % msg)
+    node.get_logger().info("Received time zone info: %s" % msg.name)
 
 def main():
-    pub = node.create_subscription(Person, "person", cb, 10)
+    node.create_subscription(Person, "person", cb, 10)
     rclpy.spin(node)
 

@@ -39,17 +39,20 @@ struct Person_
     {
       this->name = "";
       this->age = 0;
+      this->timezone_info = "";
     }
   }
 
   explicit Person_(const ContainerAllocator & _alloc, rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
-  : name(_alloc)
+  : name(_alloc),
+    timezone_info(_alloc)
   {
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
       this->name = "";
       this->age = 0;
+      this->timezone_info = "";
     }
   }
 
@@ -60,6 +63,9 @@ struct Person_
   using _age_type =
     uint8_t;
   _age_type age;
+  using _timezone_info_type =
+    std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other>;
+  _timezone_info_type timezone_info;
 
   // setters for named parameter idiom
   Type & set__name(
@@ -72,6 +78,12 @@ struct Person_
     const uint8_t & _arg)
   {
     this->age = _arg;
+    return *this;
+  }
+  Type & set__timezone_info(
+    const std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other> & _arg)
+  {
+    this->timezone_info = _arg;
     return *this;
   }
 
@@ -121,6 +133,9 @@ struct Person_
       return false;
     }
     if (this->age != other.age) {
+      return false;
+    }
+    if (this->timezone_info != other.timezone_info) {
       return false;
     }
     return true;

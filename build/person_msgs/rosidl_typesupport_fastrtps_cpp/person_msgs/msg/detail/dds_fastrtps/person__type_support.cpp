@@ -36,6 +36,8 @@ cdr_serialize(
   cdr << ros_message.name;
   // Member: age
   cdr << ros_message.age;
+  // Member: timezone_info
+  cdr << ros_message.timezone_info;
   return true;
 }
 
@@ -50,6 +52,9 @@ cdr_deserialize(
 
   // Member: age
   cdr >> ros_message.age;
+
+  // Member: timezone_info
+  cdr >> ros_message.timezone_info;
 
   return true;
 }
@@ -77,6 +82,10 @@ get_serialized_size(
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
+  // Member: timezone_info
+  current_alignment += padding +
+    eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
+    (ros_message.timezone_info.size() + 1);
 
   return current_alignment - initial_alignment;
 }
@@ -113,6 +122,18 @@ max_serialized_size_Person(
     size_t array_size = 1;
 
     current_alignment += array_size * sizeof(uint8_t);
+  }
+
+  // Member: timezone_info
+  {
+    size_t array_size = 1;
+
+    full_bounded = false;
+    for (size_t index = 0; index < array_size; ++index) {
+      current_alignment += padding +
+        eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
+        1;
+    }
   }
 
   return current_alignment - initial_alignment;

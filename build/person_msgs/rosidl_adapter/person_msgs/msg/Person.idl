@@ -9,6 +9,8 @@ module person_msgs {
       string name;
 
       uint8 age;
+
+      string timezone_info;
     };
   };
 };

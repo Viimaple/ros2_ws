@@ -37,7 +37,7 @@ void Person_fini_function(void * message_memory)
   typed_message->~Person();
 }
 
-static const ::rosidl_typesupport_introspection_cpp::MessageMember Person_message_member_array[2] = {
+static const ::rosidl_typesupport_introspection_cpp::MessageMember Person_message_member_array[3] = {
   {
     "name",  // name
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_STRING,  // type
@@ -67,13 +67,28 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember Person_messag
     nullptr,  // get_const(index) function pointer
     nullptr,  // get(index) function pointer
     nullptr  // resize(index) function pointer
+  },
+  {
+    "timezone_info",  // name
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_STRING,  // type
+    0,  // upper bound of string
+    nullptr,  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(person_msgs::msg::Person, timezone_info),  // bytes offset in struct
+    nullptr,  // default value
+    nullptr,  // size() function pointer
+    nullptr,  // get_const(index) function pointer
+    nullptr,  // get(index) function pointer
+    nullptr  // resize(index) function pointer
   }
 };
 
 static const ::rosidl_typesupport_introspection_cpp::MessageMembers Person_message_members = {
   "person_msgs::msg",  // message namespace
   "Person",  // message name
-  2,  // number of fields
+  3,  // number of fields
   sizeof(person_msgs::msg::Person),
   Person_message_member_array,  // message members
   Person_init_function,  // function to initialize message memory (memory has to be allocated)

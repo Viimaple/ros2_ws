@@ -1,26 +1,28 @@
 import rclpy
 from rclpy.node import Node
-from std_msgs.msg import Int16
+from person_msgs.msg import Person
+import pytz
+from datetime import datetime
 
-class Talker(Node):
-    def __init__(self):
-        super().__init__("talker")
-        self.pub = self.create_publisher(Int16,"countup",10)
-        self.create_timer(0.5,self.cb)
-        self.n = 0
+rclpy.init()
+node = Node("talker")
+pub = node.create_publisher(Person, "person", 10)
 
-    def cb(self):
-        msg = Int16()
-        msg.data = self.n
-        self.pub.publish(msg)
-        self.n += 1
+def cd():
+    msg = Person()
 
+    tz = pytz.timezone("Asia/Tokyo")
+    
+    current_time = datetime.now(tz).strftime("%Y-%m-%d %H:%M:%S")
+    
+    utc_offset = tz.utcoffset(datetime.now()).total_seconds() / 3600
+    utc_offset_str = f"UTC{'+' if utc_offset >= 0 else '-'}{abs(int(utc_offset))}"
+
+    msg.name = f"JST: {utc_offset_str}"
+
+    pub.publish(msg)
 
 def main():
-    rclpy.init()
-    node = Talker()
+    node.create_timer(1.0, cd)
     rclpy.spin(node)
-
- 
-
 

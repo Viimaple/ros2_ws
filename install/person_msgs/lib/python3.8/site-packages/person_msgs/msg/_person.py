@@ -55,16 +55,19 @@ class Person(metaclass=Metaclass_Person):
     __slots__ = [
         '_name',
         '_age',
+        '_timezone_info',
     ]
 
     _fields_and_field_types = {
         'name': 'string',
         'age': 'uint8',
+        'timezone_info': 'string',
     }
 
     SLOT_TYPES = (
         rosidl_parser.definition.UnboundedString(),  # noqa: E501
         rosidl_parser.definition.BasicType('uint8'),  # noqa: E501
+        rosidl_parser.definition.UnboundedString(),  # noqa: E501
     )
 
     def __init__(self, **kwargs):
@@ -73,6 +76,7 @@ class Person(metaclass=Metaclass_Person):
             ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
         self.name = kwargs.get('name', str())
         self.age = kwargs.get('age', int())
+        self.timezone_info = kwargs.get('timezone_info', str())
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -106,6 +110,8 @@ class Person(metaclass=Metaclass_Person):
         if self.name != other.name:
             return False
         if self.age != other.age:
+            return False
+        if self.timezone_info != other.timezone_info:
             return False
         return True
 
@@ -141,3 +147,16 @@ class Person(metaclass=Metaclass_Person):
             assert value >= 0 and value < 256, \
                 "The 'age' field must be an unsigned integer in [0, 255]"
         self._age = value
+
+    @property
+    def timezone_info(self):
+        """Message field 'timezone_info'."""
+        return self._timezone_info
+
+    @timezone_info.setter
+    def timezone_info(self, value):
+        if __debug__:
+            assert \
+                isinstance(value, str), \
+                "The 'timezone_info' field must be of type 'str'"
+        self._timezone_info = value

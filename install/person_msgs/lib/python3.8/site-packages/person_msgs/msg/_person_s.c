@@ -77,6 +77,21 @@ bool person_msgs__msg__person__convert_from_py(PyObject * _pymsg, void * _ros_me
     ros_message->age = (uint8_t)PyLong_AsUnsignedLong(field);
     Py_DECREF(field);
   }
+  {  // timezone_info
+    PyObject * field = PyObject_GetAttrString(_pymsg, "timezone_info");
+    if (!field) {
+      return false;
+    }
+    assert(PyUnicode_Check(field));
+    PyObject * encoded_field = PyUnicode_AsUTF8String(field);
+    if (!encoded_field) {
+      Py_DECREF(field);
+      return false;
+    }
+    rosidl_runtime_c__String__assign(&ros_message->timezone_info, PyBytes_AS_STRING(encoded_field));
+    Py_DECREF(encoded_field);
+    Py_DECREF(field);
+  }
 
   return true;
 }
@@ -121,6 +136,23 @@ PyObject * person_msgs__msg__person__convert_to_py(void * raw_ros_message)
     field = PyLong_FromUnsignedLong(ros_message->age);
     {
       int rc = PyObject_SetAttrString(_pymessage, "age", field);
+      Py_DECREF(field);
+      if (rc) {
+        return NULL;
+      }
+    }
+  }
+  {  // timezone_info
+    PyObject * field = NULL;
+    field = PyUnicode_DecodeUTF8(
+      ros_message->timezone_info.data,
+      strlen(ros_message->timezone_info.data),
+      "replace");
+    if (!field) {
+      return NULL;
+    }
+    {
+      int rc = PyObject_SetAttrString(_pymessage, "timezone_info", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;

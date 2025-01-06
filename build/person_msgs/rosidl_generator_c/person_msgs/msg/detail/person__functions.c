@@ -13,6 +13,7 @@
 
 // Include directives for member types
 // Member `name`
+// Member `timezone_info`
 #include "rosidl_runtime_c/string_functions.h"
 
 bool
@@ -27,6 +28,11 @@ person_msgs__msg__Person__init(person_msgs__msg__Person * msg)
     return false;
   }
   // age
+  // timezone_info
+  if (!rosidl_runtime_c__String__init(&msg->timezone_info)) {
+    person_msgs__msg__Person__fini(msg);
+    return false;
+  }
   return true;
 }
 
@@ -39,6 +45,8 @@ person_msgs__msg__Person__fini(person_msgs__msg__Person * msg)
   // name
   rosidl_runtime_c__String__fini(&msg->name);
   // age
+  // timezone_info
+  rosidl_runtime_c__String__fini(&msg->timezone_info);
 }
 
 bool
@@ -55,6 +63,12 @@ person_msgs__msg__Person__are_equal(const person_msgs__msg__Person * lhs, const 
   }
   // age
   if (lhs->age != rhs->age) {
+    return false;
+  }
+  // timezone_info
+  if (!rosidl_runtime_c__String__are_equal(
+      &(lhs->timezone_info), &(rhs->timezone_info)))
+  {
     return false;
   }
   return true;
@@ -76,6 +90,12 @@ person_msgs__msg__Person__copy(
   }
   // age
   output->age = input->age;
+  // timezone_info
+  if (!rosidl_runtime_c__String__copy(
+      &(input->timezone_info), &(output->timezone_info)))
+  {
+    return false;
+  }
   return true;
 }
 
