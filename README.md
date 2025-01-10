@@ -15,8 +15,8 @@
     
 1. リポジトリをクローンします。
 ```sh
-$ git clone https://github.com/Viimaple/homework.git
-$ cd homework
+$ https://github.com/Viimaple/ros2_ws/edit/kadai2
+$ cd ros2_ws
 ```  
 2. 必要な権限を設定して実行可能にします：
 ```sh
