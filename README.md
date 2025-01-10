@@ -1,6 +1,6 @@
-# 体重に基づいて2日に必要な水分摂取量を計算する簡単なプログラム
+# ROS2 タイムゾーン情報通信プログラム
 
-このプロジェクトは、体重に基づいて1日に必要な水分摂取量を計算する簡単なプログラムです。
+このプロジェクトは、ROS2を使用して日本標準時（JST）のタイムゾーン情報を送受信する2つのプログラムを提供します。
 
 ## 概要
 
@@ -13,41 +13,50 @@
 
 このプロジェクトをローカルにインストールするには、以下の手順を実行してください。
     
-1. リポジトリをクローンします。
+1. リポジトリをクローンします：
 ```sh
 $ https://github.com/Viimaple/ros2_ws/edit/kadai2
 $ cd ros2_ws
 ```  
-2. 必要な権限を設定して実行可能にします：
+2. 必要な依存パッケージをインストールします：
 ```sh
-$ chmod +x work
+$ pip install pytz
+$ sudo apt install python3-pip
+$ pip3 install pytz
 ```
 
 ## 使い方
-
-`work` は、ユーザーに体重を数字で入力させ、1日に必要な水分摂取量を計算します。　　
-
+実行方法:  
+```sh
+$ cd ~/ros2_ws
+$ colcon build
+$ source install/setup.bash
+$ ros2 run mypkg talker
+$ ros2 run mypkg listener
+```
 ### プログラムの実行例
 - 正しい入力例
 ```sh
-$ echo 70 | ./work
-$ 2.31
+[INFO] [1736545086.599539943] [listener]: Received time zone info: JST: UTC+9
+[INFO] [1736545087.571690731] [listener]: Received time zone info: JST: UTC+9
+[INFO] [1736545088.571684817] [listener]: Received time zone info: JST: UTC+9
+[INFO] [1736545089.571791643] [listener]: Received time zone info: JST: UTC+9
+...
+..
+.
 ```
-- 変な入力の例
-```sh
-$ echo a | ./work
-# 結果：標準エラー出力にメッセージが表示され、エラーコード1を返します。
-```
+
 ## ライセンス
 
 このプロジェクトはBSD-3-Clauseライセンスのもとで公開されています。
 
 ## クレジット
-このプログラムの一部————`water_test.bash`はRyuichi Ueda先生のコードを参考にしています。ご貢献に感謝します。
+このプログラムの一部は上田 隆一先生のコードを利用にしています。ご貢献に感謝します。
 
 ## 必要なソフトウェア
 - Python
   - テスト済みバージョン: 3.7〜3.10
+- ROS2
   
 ## テスト環境
 - Ubuntu 22.04.5 LTS
